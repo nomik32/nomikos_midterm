@@ -1,0 +1,101 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-color: #444444;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #2d2d2d !important;
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: #2d2d2d !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .table {
+    background-color: #2d2d2d !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: #3d3d3d !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #2d2d2d !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #4285F4, #34A853);
+    color: white;
+    margin-top: -24px;
+    padding-top: 100px !important;
+}
+
+.priority-high {
+    background-color: #EA4335 !important;
+    color: white !important;
+}
+
+.priority-medium {
+    background-color: #FBBC04 !important;
+    color: white !important;
+}
+
+.priority-low {
+    background-color: #34A853 !important;
+    color: white !important;
+}
+
+.task-completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.team-avatar img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 80px !important;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .table-responsive table {
+        font-size: 0.875rem;
+    }
+}
